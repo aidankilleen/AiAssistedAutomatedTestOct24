@@ -1,0 +1,15 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Test project to verify that node.js is installed and working",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx cypress open"
+  },
+  "author": "Aidan Killeen",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}

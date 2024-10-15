@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        div h1 {
+            color: blue;
+        }
+
+        /*
+        #box1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+            */
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .box:nth-child(1) {
+            background-color:lightgreen;
+        }
+
+
+
+        input[name="username"] {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Html Page!</h1>  
+
+    <input type="text" name="username" placeholder="username"/>
+
+
+    <div>
+        <h1>Section 1</h1>
+        this is a section of the page
+    </div>
+    <input type="button" value="Press Me"/>
+    <input id="btn2" type="button" value="Button 2"/><br>
+
+Password:
+    <input type="password"/>
+
+    <div>
+        <div id="box1" class="box">box 1</div>
+        <div id="box2" class="box">box 2</div>
+        <div id="box3" class="box">box 3</div>
+    </div>
+
+</body>
+</html>
