@@ -26,5 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd test-playwright
-    - run: npm test
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./test-playwright  # Set working directory for installing dependencies
+    - name: Run Playwright tests
+      run: npm test
+      working-directory: ./test-playwright  # Set working directory for running the tests
+
