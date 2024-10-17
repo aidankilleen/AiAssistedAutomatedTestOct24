@@ -32,6 +32,10 @@ jobs:
       run: npm install
       working-directory: ./test-playwright  # Set working directory for installing dependencies
 
+    - name: Install Playwright required dependencies
+      run: npx playwright install-deps
+      working-directory: ./test-playwright
+
     - name: Install Playwright browsers
       run: npx playwright install
       working-directory: ./test-playwright
