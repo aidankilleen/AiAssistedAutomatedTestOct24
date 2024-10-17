@@ -50,7 +50,7 @@ test('Add todos and verify persistence after refresh', async ({ page }) => {
     await expect(itemCount).toEqual(4);
 
     // Optionally, verify the text of each item to ensure correct persistence
-    await expect(page.locator('.todo-list li', { hasText: 'Get milkxx' })).toBeVisible();
+    await expect(page.locator('.todo-list li', { hasText: 'Get milk' })).toBeVisible();
     await expect(page.locator('.todo-list li', { hasText: 'Collect Kids' })).toBeVisible();
     await expect(page.locator('.todo-list li', { hasText: 'Go to gym' })).toBeVisible();
     await expect(page.locator('.todo-list li', { hasText: 'Watch tv' })).toBeVisible();
